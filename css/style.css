@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'futura-pt', sans-serif;
+}
+/* om section */
+#omsection{background-color: #CED4D6;
+height: 100vh; width: 100%;}
+blockquote{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.omcontainer{
+width: 100%;
+height: 100vh;
+position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h2{font-size: 2.1rem;
+color: #1A5A77;
+}
+
+.omoverskrift{
+    font-size: 2rem;
+    color: #1A5A77;
+    padding-bottom: 3vh;
+}
+.omcitat{
+    color: #1E1B1B;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 70vh;
+}
+
+footer{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1E1B1B;
+    flex-direction: row;
+}
+.foottext{
+    color: white;
+}
+.some img{
+    width: 20px;
+    height: auto;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 365px){
+    .omoverskrift{
+        font-size: 1.8rem;
+        padding-bottom: 2vh;
+    }
+    .omcitat{
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (min-width: 1300px){
+    .omcitat{
+        margin-left: 20%; margin-right: 20%;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .omoverskrift{
+        font-size: 7vh;
+
+    }
+
+
+    .omcitat{
+        font-size: 3vh;
+        margin-left: 12%; margin-right: 12%;
+        line-height: 1.7;
+    }
+    h2{
+        font-size: 7vh;
+    }
+    .soren{
+        font-size: 5vh;
+    }
+}
+
+/*kontakt sektion*/
+
+.map-responsive{
+    overflow:hidden;
+    position:relative;
+}
+.map-responsive iframe{
+    left:50%;
+    top:50%;
+    height:60vh;
+    width:100%;
+    position: relative;
+}
+
+#kontaktsection {
+    background: rgb(255, 255, 255, 0.95); 
+    text-align: center;  
+    z-index: 999;
+    width: 100%;
+}
+.soren{
+    font-size: 1.6rem
+}
+.kontaktoverskrift{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+.infosektion{
+    height: 40vh;
+}
+
+.findsection {
+    background: rgb(255, 255, 255, 0.95); 
+    text-align: center;  
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.columnmap {
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-top: 6px;
+position: relative;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*introsektion*/
+*, *::before, *::after {
+    box-sizing: border-box; 
+}
+
+
+
+/********************** Navigation styles***************************/ 
+
+Header {
+    background: rgb(30, 27, 27, 1); 
+    text-align: center; 
+    position: fixed; 
+    z-index: 999;
+    width: 100%;
+}
+
+.logo {
+    margin: 2px;
+    margin-top: 7px; 
+}
+
+.logo img {
+    width: 150px;
+}
+
+
+.nav-toggle {
+    display: none; 
+}
+
+.nav-toggle-label {
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    margin-left: 1em;  
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after {
+    display: block; 
+    background: white; 
+    height: 2px;
+    width: 2em; 
+    border-radius: 2px; 
+    position: relative; 
+    
+}
+
+.nav-toggle-label span::before, 
+.nav-toggle-label span::after {
+    content: ''; 
+    position: absolute; 
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px; 
+    
+}
+
+.nav-toggle-label span::after {
+    top: 7px;    
+}
+
+nav {
+    position: absolute; 
+    text-align: left; 
+    top: 100%; 
+    left: 0; 
+    background: rgb(30,27,27,1); 
+    width: 100%;  
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out; 
+}
+
+nav ul {
+    margin: 0;
+    padding: 0; 
+    list-style: none; 
+    
+}
+
+nav li {
+    margin-bottom: 1em; 
+    margin-left: 1em; 
+    
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.2rem; 
+    text-transform: uppercase; 
+    opacity: 0;
+    transition: opacity 150ms ease-in-out ; 
+}
+
+nav a:hover {
+    color: #999; 
+}
+
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1); 
+    
+}
+
+.nav-toggle:checked ~ nav a { 
+    opacity: 1; 
+    transition: opacity 250ms ease-in-out 250ms; 
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle-label {
+        display: none; 
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(60%, 1fr) 1fr; 
+        background: rgb(30, 27, 27, 0.7); 
+    }
+
+    .logo {
+        grid-column: 2 / 3;
+    }
+    
+    .logo img {
+        width: 150px;
+    }
+    
+    nav {
+        all: unset; 
+        grid-column: 3 / 4; 
+        display: flex; 
+        justify-content: flex-end; 
+        align-items: center; 
+    }
+    
+    nav a {
+        opacity: 1; 
+        position: relative;
+        letter-spacing: 1.4; 
+    }
+    
+    nav ul {
+        display: flex; 
+        justify-content: flex-end;  
+        
+    }
+    
+    nav li {
+        margin-left: 3em; 
+        margin-bottom: 0;
+        font-family: 'futura-pt', sans-serif; 
+    }
+   
+    nav a::before {
+        content: ''; 
+        display: block;
+        height: 5px; 
+        background: white; 
+        position: absolute; 
+        top: -.50em; 
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms; 
+    }
+    
+    nav a:hover::before {
+        transform: scale(1,1); 
+    }
+    
+    .forsidebillede2 {
+        display: block; 
+        width: 100%; 
+        height: 100vh;
+    }
+    
+    .forsidebillede1 {
+        display: none; 
+    }
+    
+    .forsidebillede-tekst{
+        font-size: 140%;
+        font-family: 'futura-pt', sans-serif;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo img {
+        width: 150px; 
+    }
+    
+    .forsidebillede-tekst {
+        font-size: 200%; 
+    }
+}
+
+
+/**********************FORSIDE BILLEDE *********************************/ 
+
+#forsidebillede {
+   position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.forsidebillede1 {  
+    width: 100%; 
+    height: auto;   
+    
+}
+
+.forsidebillede-tekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    text-align: center;
+    font-family: 'futura-pt', sans-serif;
+}
+
+
+@media screen and (max-width: 800px) { 
+.forsidebillede2 {
+    display: none; 
+}
+
+}
+/*events*/
+
+h2{
+
+}
+.over {text-align: center;
+margin-top: 2rem; margin-bottom: 2rem;}
+
+.begivenheder{
+    display: flex;
+    flex-direction: column;
+}
+
+.events {display: flex;
+flex-direction: column;
+text-align: center;
+padding-bottom: 10vh;
+}
+.eventtext{
+    font-size: 1.6rem;
+}
+
+
+.events img {width: 80%;
+height: auto;}
+
+
+
+@media only screen and (min-width: 1100px) {
+
+    #eventsection{
+        height: 100vh;
+    }
+    
+    .events img{
+        height: auto;
+        width: 70%;
+    }
+    .begivenheder {display: flex;
+flex-direction: row;
+width: 100%;
+height: 80vh;
+}
+
+
+.events {display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 50%;
+}
+
+.eventtext{
+    font-size: 2.1rem;
+}
+.over{
+    margin-top: 10vh;
+}
+ }
